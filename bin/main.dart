@@ -1,5 +1,6 @@
 import 'package:args/args.dart';
 import 'package:KeepUpThePace/KeepUpThePace.dart' as keepupthepace;
+import 'package:KeepUpThePace/CompendiumOfPhysicalActivities.dart' as compendium;
 
 ArgResults argResults;
 
@@ -103,32 +104,66 @@ void main(List<String> arguments) {
     profile.verify();
 
   // check the good health of the compendium classes
-  keepupthepace.Bicycling bicyclingMET = new keepupthepace.Bicycling();
+  compendium.Bicycling bicyclingMET = new compendium.Bicycling();
   bicyclingMET.printValues();
 
-  keepupthepace.ConditioningExercise conditioningMET = new keepupthepace.ConditioningExercise();
+  compendium.ConditioningExercise conditioningMET = new compendium.ConditioningExercise();
   conditioningMET.printValues();
 
-  keepupthepace.Dancing dancingMET = new keepupthepace.Dancing();
+  compendium.Dancing dancingMET = new compendium.Dancing();
   dancingMET.printValues();
 
-  keepupthepace.FishingHunting fishingHuntingMET = new keepupthepace.FishingHunting();
+  compendium.FishingHunting fishingHuntingMET = new compendium.FishingHunting();
   fishingHuntingMET.printValues();
 
-  keepupthepace.HomeActivity homeActivityMET = new keepupthepace.HomeActivity();
+  compendium.HomeActivity homeActivityMET = new compendium.HomeActivity();
   homeActivityMET.printValues();
 
-  keepupthepace.HomeRepair homeRepairMET = new keepupthepace.HomeRepair();
+  compendium.HomeRepair homeRepairMET = new compendium.HomeRepair();
   homeRepairMET.printValues();
 
-  keepupthepace.Inactivity inactivityMET = new keepupthepace.Inactivity();
+  compendium.Inactivity inactivityMET = new compendium.Inactivity();
   inactivityMET.printValues();
 
-  keepupthepace.LawnAndGarden lawnAndGardenMET = new keepupthepace.LawnAndGarden();
+  compendium.LawnAndGarden lawnAndGardenMET = new compendium.LawnAndGarden();
   lawnAndGardenMET.printValues();
 
-  keepupthepace.Miscellaneous miscellaneousMET = new keepupthepace.Miscellaneous();
+  compendium.Miscellaneous miscellaneousMET = new compendium.Miscellaneous();
   miscellaneousMET.printValues();
 
+  compendium.MusicPlaying musicPlayingMET = new compendium.MusicPlaying();
+  musicPlayingMET.printValues();
 
+  compendium.Occupation occupationMET = new compendium.Occupation();
+  occupationMET.printValues();
+
+  compendium.Running runningMET = new compendium.Running();
+  runningMET.printValues();
+
+  compendium.SelfCare selfCareMET = new compendium.SelfCare();
+  selfCareMET.printValues();
+
+  compendium.SexualActivity sexualActivityMET = new compendium.SexualActivity();
+  sexualActivityMET.printValues();
+
+  compendium.Sports sportsMET = new compendium.Sports();
+  sportsMET.printValues();
+
+  compendium.Transportation transportationMET = new compendium.Transportation();
+  transportationMET.printValues();
+
+  compendium.Walking walkingMET = new compendium.Walking();
+  walkingMET.printValues();
+
+  compendium.WaterActivities waterActivitiesMET = new compendium.WaterActivities();
+  waterActivitiesMET.printValues();
+
+  compendium.WinterActivities winterActivitiesMET = new compendium.WinterActivities();
+  winterActivitiesMET.printValues();
+
+  compendium.ReligiousActivities religiousActivitiesMET = new compendium.ReligiousActivities();
+  religiousActivitiesMET.printValues();
+
+  compendium.VolunteerActivities volunteerActivitiesMET = new compendium.VolunteerActivities();
+  volunteerActivitiesMET.printValues();
 }
