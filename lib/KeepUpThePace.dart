@@ -14,4 +14,5 @@ export 'src/05-homeactivity.dart';
 export 'src/06-homerepair.dart';
 export 'src/07-inactivity.dart';
 export 'src/08-lawngarden.dart';
+export 'src/09-miscellaneous.dart';
 // TODO: Export any libraries intended for clients of this package.

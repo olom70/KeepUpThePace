@@ -127,6 +127,8 @@ void main(List<String> arguments) {
   keepupthepace.LawnAndGarden lawnAndGardenMET = new keepupthepace.LawnAndGarden();
   lawnAndGardenMET.printValues();
 
+  keepupthepace.Miscellaneous miscellaneousMET = new keepupthepace.Miscellaneous();
+  miscellaneousMET.printValues();
 
 
 }
