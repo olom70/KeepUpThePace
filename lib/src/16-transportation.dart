@@ -22,5 +22,15 @@ class Transportation extends compendium.Compendium {
   ,16050 : "truck, semi, tractor, > 1 ton, or bus, driving"
   ,16060 : "walking for transportation, 2.8-3.2 mph, level, moderate pace, firm surface"};
 
+  final Map metDescription_fr  = const <int, String>{16010 : "conduire une voiture ou un camion léger (hors semi-remorque)"
+  ,16015 : "se déplacer en voiture ou en camion"
+  ,16016 : "se déplacer en bus ou train"
+  ,16020 : "se déplacer en avion ou en hélicoptère"
+  ,16030 : "scooter, moto"
+  ,16035 : "tirer un pousse-pousse"
+  ,16040 : "pousser un avion à l'intérieur et à l'extérieur d'un hangar"
+  ,16050 : "conduire un camion, un semi-remorque, un tracteur > 1 tonne ou un bus"
+  ,16060 : "marcher à 4,5-5 km/h, sur le plat, rythme modéré, sol ferme"};
+
 
 }

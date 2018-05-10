@@ -26,5 +26,17 @@ class SelfCare extends compendium.Compendium {
   ,13046 : "having hair or nails done by someone else, sitting"
   ,13050 : "showering, toweling off, standing"};
 
+  final Map metDescription_fr   = const <int, String>{13000 : "être debout, se préparer à aller au lit, général"
+  ,13009 : "aller à la selle assis"
+  ,13010 : "se baigner, assis"
+  ,13020 : "s'habiller, se déshabiller, debout ou assis"
+  ,13030 : "manger, assis"
+  ,13035 : "parler et manger ou manger uniquement, debout"
+  ,13036 : "prendre des médicaments, assis ou debout"
+  ,13040 : "se préparer, se laver les mains, se raser, se brosser les dents, se maquiller, assis ou debout"
+  ,13045 : "se coiffer, debout"
+  ,13046 : "se faire coiffer ou manucurer par quelqu'un, assis"
+  ,13050 : "se doucher, se sécher, debout"};
+
 
 }

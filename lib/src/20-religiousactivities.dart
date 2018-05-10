@@ -52,4 +52,29 @@ class ReligiousActivities extends compendium.Compendium {
   ,20095 : "standing, moderate-to-heavy effort, manual labor, lifting ≥ 50 lbs, heavy maintenance"
   ,20100 : "typing, electric, manual, or computer"};
 
+  final Map metDescription_fr  = const <int, String>{20000 : "être assis à l'église, pendant la messe, assister à une cérémonie, être assis en silence"
+  ,20001 : "être assis, jouer d'un instrument à l'église"
+  ,20005 : "être assis à l'église, parler ou chanter, assister à une cérémonie, être assis, participation active"
+  ,20010 : "être assis, lire des textes religieux à la maison"
+  ,20015 : "être debout à l'église (en silence), assister à une cérémonie"
+  ,20020 : "être debout, chanter à l'église, assister à une cérémonie, être debout, participation active"
+  ,20025 : "être à genoux à l'église ou à la maison, prier"
+  ,20030 : "être debout, parler à l'église"
+  ,20035 : "marcher dans l'église"
+  ,20036 : "marcher à moins de 3 km/h, rythme très lent"
+  ,20037 : "marcher à 5 km/h, rythme modéré, sans rien porter"
+  ,20038 : "marcher à 5,5 km/h, rythme rapide, sans rien porter"
+  ,20039 : "combinaison marcher/se tenir debout à des fins religieuses, placer l'assistance"
+  ,20040 : "faire une louange en dansant ou en courant, danse spirituelle dans l'église"
+  ,20045 : "servir des aliments à l'église"
+  ,20046 : "préparer des aliments à l'église"
+  ,20047 : "faire la vaisselle, nettoyer la cuisine à l'église"
+  ,20050 : "manger à l'église"
+  ,20055 : "manger/parler à l'église ou manger debout, fêtes religieuses"
+  ,20060 : "nettoyer l'église"
+  ,20061 : "travail général dans la cour de l'église"
+  ,20065 : "être debout, effort modéré (soulever des objets lourds, assembler à un rythme rapide)"
+  ,20095 : "être debout, effort modéré à important, travail manuel, soulevez des charges ≥ 22,5 kg, maintenance lourde"
+  ,20100 : "taper des documents avec une machine à écrire électrique, mécanique ou un ordinateur"};
+
 }

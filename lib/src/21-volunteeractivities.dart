@@ -42,4 +42,24 @@ class VolunteerActivities extends compendium.Compendium {
   ,21065 : "walking, 3.5 mph, briskly and carrying objects less than 25 pounds"
   ,21070 : "walk/stand combination, for volunteer purposes"};
 
+  final Map metDescription_fr  = const <int, String>{21000 : "être assis, réunion, général, et/ou impliquant une discussion"
+  ,21005 : "être assis, travail de bureau léger, général"
+  ,21010 : "être assis, travail modéré"
+  ,21015 : "être debout, travail léger (remplissage, discussion, assemblage)"
+  ,21016 : "être assis, s'occuper d'enfants, périodes actives uniquement"
+  ,21017 : "être debout, s'occuper d'enfants, périodes actives uniquement"
+  ,21018 : "marcher/courir, jouer avec les enfants, effort modéré, périodes actives uniquement"
+  ,21019 : "marcher/courir, jouer avec des enfants, effort vigoureux, périodes actives uniquement"
+  ,21020 : "être debout, travail léger/modéré (par ex. faire des cartons, assembler/réparer, installer des chaises/meubles)"
+  ,21025 : "être debout, effort modéré (soulever 22,5kg, assembler à un rythme rapide)"
+  ,21030 : "être debout, travail modéré/vigoureux"
+  ,21035 : "taper des documents avec une machine à écrire électrique, mécanique ou un ordinateur"
+  ,21040 : "marcher à moins de 3 km/h, rythme très lent"
+  ,21045 : "marcher à 5 km/h, rythme modéré, sans rien porter"
+  ,21050 : "marcher à 5,5 km/h, rythme rapide, sans rien porter"
+  ,21055 : "marcher à 4 km/h, rythme lent, en portant des objets pesant moins de 11 kg"
+  ,21060 : "marcher à 5 km/h, rythme modéré, en portant des objets pesant moins de 11 kg, en poussant quelque chose"
+  ,21065 : "marcher à 6 km/h, rythme rapide, en portant des objets pesant moins de 11 kg"
+  ,21070 : "combinaison marcher/arrêt debout, à des fins bénévoles"};
+
 }

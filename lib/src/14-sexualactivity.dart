@@ -10,6 +10,9 @@ class SexualActivity extends compendium.Compendium {
   ,14020 : "general, moderate effort"
   ,14030 : "passive, light effort, kissing, hugging"};
 
+  final Map metDescription_fr  = const <int, String>{14010 : "mode actif, effort vigoureux"
+  ,14020 : "général, effort modéré"
+  ,14030 : "mode passif, effort léger, baisers, embrassades"};
 
 
 }

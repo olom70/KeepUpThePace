@@ -54,4 +54,30 @@ class Running extends compendium.Compendium {
   ,12190 : "running, training, pushing a wheelchair or baby carrier"
   ,12200 : "running, marathon"};
 
+  final Map metDescription_fr  = const <int, String>{12010 : "combinaison jogging/marche (composant jogging inférieur à 10 minutes) (code Taylor 180)"
+  ,12020 : "jogging, général"
+  ,12025 : "jogging, sur-place"
+  ,12027 : "jogging, sur un mini-trampoline"
+  ,12029 : "courir à 6,5 km/h (9 min/km)"
+  ,12030 : "courir à 8 km/h (7,5 min/km)"
+  ,12040 : "courir à 8,4 km/h (7,3 min/km)"
+  ,12050 : "courir à 9,6 km/h (6,25 min/km)"
+  ,12060 : "courir à 10.8 km/h (5,5 min/km)"
+  ,12070 : "courir à 11,25 km/h (5,3 min/km)"
+  ,12080 : "courir à 12 km/h (5 min/km)"
+  ,12090 : "courir à 12,9 km/h (4,65 min/km)"
+  ,12100 : "courir à 13,8 km/h (4,3 min/km)"
+  ,12110 : "courir à 14,5 km/h (4,1 min/km)"
+  ,12120 : "courir à 16 km/h (3,75 min/km)"
+  ,12130 : "courir à 17,7 km/h (3,4 min/km)"
+  ,12132 : "courir à 19,3 km/h (3,1 min/km)"
+  ,12134 : "courir à 20,9 km/h (2,9 min/km)"
+  ,12135 : "courir à 22,5 km/h (2,66 min/km)"
+  ,12140 : "courir, cross"
+  ,12150 : "courir (code Taylor 200)"
+  ,12170 : "courir, escaliers, montée"
+  ,12180 : "courir, sur une piste, entraînement d’équipe"
+  ,12190 : "courir, entraînement, pousser un fauteuil roulant ou landau"
+  ,12200 : "courir, marathon"};
+
 }

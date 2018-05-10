@@ -21,7 +21,7 @@ class Bicycling extends compendium.Compendium {
                                  ,1066 : 9.0
                                  ,1070 : 5.0 };
 
-final Map metDescription  = const <int, String>{1003 : "bicycling, mountain, uphill, vigorous"
+  final Map metDescription  = const <int, String>{1003 : "bicycling, mountain, uphill, vigorous"
                                  ,1004 : "bicycling, mountain, competitive, racing"
                                  ,1008 : "bicycling, BMX"
                                  ,1009 : "bicycling, mountain, general"
@@ -39,5 +39,25 @@ final Map metDescription  = const <int, String>{1003 : "bicycling, mountain, uph
                                  ,1065 : "bicycling, 12 mph, seated, hands on brake hoods or bar drops, 80 rpm"
                                  ,1066 : "bicycling, 12 mph, standing, hands on brake hoods, 60 rpm"
                                  ,1070 : "unicycling"};
+
+  final Map metDescription_fr  = const <int, String>{1003 : "cyclisme, en montagne, en montée, effort vigoureux"
+                                 ,1004 : "cyclisme, en montagne, en compétition, en course"
+                                 ,1008 : "cyclisme, BMX"
+                                 ,1009 : "cyclisme, en montagne, général"
+                                 ,1010 : "cyclisme, <16 km/h, loisirs, pour aller au travail ou pour le plaisir (code Taylor 115)"
+                                 ,1011 : "cyclisme, pour aller/revenir du travail, à son rythme"
+                                 ,1013 : "cyclisme, sur terre ou route de campagne, rythme modéré"
+                                 ,1015 : "cyclisme, général"
+                                 ,1018 : "cyclisme, loisir, 9 km/h"
+                                 ,1019 : "cyclisme, loisir, 15 km/h"
+                                 ,1020 : "cyclisme, 16-19,2 km/h, loisirs, rythme lent, effort léger"
+                                 ,1030 : "cyclisme, 19,3-22,4 km/h, loisirs, effort modéré"
+                                 ,1040 : "cyclisme, 22,5-25,6 km/h, course ou loisirs, rythme rapide, effort vigoureux"
+                                 ,1050 : "cyclisme, 25,7-30,6 km/h, course/sans aspiration ou > 30,6 km/h avec aspiration, rythme très rapide, course générale"
+                                 ,1060 : "cyclisme, > 32 km/h, course, sans aspiration"
+                                 ,1065 : "cyclisme, 19,3 km/h, assis, mains sur les cocottes de frein ou en bas du guidon, 80 tr/min"
+                                 ,1066 : "cyclisme, 19,3 km/h, en danseuse, mains sur les cocottes de frein, 60 tr/min"
+                                 ,1070 : "monocyclisme"};
+
 
 }

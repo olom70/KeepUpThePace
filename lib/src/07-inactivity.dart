@@ -36,4 +36,21 @@ class Inactivity extends compendium.Compendium {
   ,7070 : "reclining, reading"
   ,7075 : "meditating"};
 
+  final Map metDescription_fr  = const <int, String>{7010 : "être allongé en silence et regarder la télévision"
+  ,7011 : "être allongé en silence sans rien faire, être allongé dans un lit sans dormir, écouter de la musique (sans parler ni lire)"
+  ,7020 : "être assis en silence et regarder la télévision"
+  ,7021 : "être assis en silence, général"
+  ,7022 : "être assis en silence, s’agiter, général, agiter les mains"
+  ,7023 : "être assis, agiter les pieds"
+  ,7024 : "être assis, fumer"
+  ,7025 : "être assis, écouter de la musique (sans parler ni lire), regarder un film au cinéma"
+  ,7026 : "être assis à un bureau, la tête dans les mains"
+  ,7030 : "dormir"
+  ,7040 : "être debout en silence, être dans une file d'attente"
+  ,7041 : "être debout, s’agiter"
+  ,7050 : "être allongé, écrire"
+  ,7060 : "être allongé, parler ou parler au téléphone"
+  ,7070 : "être allongé, lire"
+  ,7075 : "méditer"};
+
 }

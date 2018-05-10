@@ -40,4 +40,23 @@ class Dancing extends compendium.Compendium {
   ,3050 : "Anishinaabe Jingle Dancing"
   ,3060 : "Caribbean dance (Abakua, Beguine, Bellair, Bongo, Brukin's, Caribbean Quadrills, Dinki Mini, Gere, Gumbay, Ibo, Jonkonnu, Kumina, Oreisha, Jambu)"};
 
+  final Map metDescription_fr  = const <int, String>{3010 : "ballet, moderne ou jazz, général, répétition ou cours"
+  ,3012 : "ballet, moderne ou jazz, représentation, effort vigoureux"
+  ,3014 : "claquettes"
+  ,3015 : "aérobic, général"
+  ,3016 : "aérobic, step, avec un step de 15-20 cm"
+  ,3017 : "aérobic, step, avec un step de 25-30 cm"
+  ,3018 : "aérobic, step, avec un step de 10 cm"
+  ,3019 : "cours de step sur banc, général"
+  ,3020 : "aérobic, faible impact"
+  ,3021 : "aérobic, fort impact"
+  ,3022 : "aérobic danse avec des lests de 4,5-7 kg"
+  ,3025 : "danse ethnique ou culturelle (par ex. grecque, moyen-orientale, hula, salsa, merengue, bamba y plena, flamenco, danse du ventre et swing)"
+  ,3030 : "danse de salon, rapide (code Taylor 125)"
+  ,3031 : "danse générale (par ex. disco, folk, gigue irlandaise à claquettes, danse de groupe, polka, contra, country)"
+  ,3038 : "danse de salon, en compétition, général"
+  ,3040 : "danse de salon, lente (par ex. valse, fox-trot, slow, samba, tango, danse du XIX ème siècle, mambo, cha-cha)"
+  ,3050 : "danse à clochettes Anishinaabe"
+  ,3060 : "danse caribéenne (Abakua, Beguine, Bellair, Bongo, Brukin's, quadrille caribéen, Dinki Mini, Gere, Gumbay, Ibo, Jonkonnu, Kumina, Oreisha, Jambu)"};
+
 }
