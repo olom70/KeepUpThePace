@@ -1,6 +1,7 @@
 import 'package:args/args.dart';
 import 'package:KeepUpThePace/KeepUpThePace.dart' as keepupthepace;
 import 'package:KeepUpThePace/CompendiumOfPhysicalActivities.dart' as compendium;
+import 'package:intl/intl.dart';
 
 ArgResults argResults;
 
