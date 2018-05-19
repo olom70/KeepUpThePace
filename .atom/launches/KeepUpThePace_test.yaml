@@ -1,10 +1,10 @@
-# Cli launch configuration for bin\main.dart.
+# Cli launch configuration for test\KeepUpThePace_test.dart.
 type: cli
-path: bin\main.dart
+path: test\KeepUpThePace_test.dart
 
 cli:
   # Additional args for the application.
-  args: -m mauvais
+  args:
   # The working directory to use for the launch.
   cwd:
   # Enable or disable checked mode.

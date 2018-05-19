@@ -1,22 +1,26 @@
 import 'dart:io';
 import 'dart:math';
+import 'phrasebook.dart' as phrasebook;
 //
 // Exception handling
 //
 class ProfileNotEnoughArguments implements Exception {
-  String rootCause = 'no metric provided';
+  String rootCause;
   ProfileNotEnoughArguments (String argument) {
     rootCause = argument;
   }
-  String errMsg() => 'Some metrics are missing ($rootCause). Check that all the required values are initialized.';
+  String errMsg() => phrasebook.PhraseBook.notEnoughArguments(rootCause);
+
 }
 
 class ProfileNotAProperValue implements Exception {
-  String property = 'no property provided';
+  //
+  String property;
   ProfileNotAProperValue (String argument) {
     property = argument;
   }
-  String errMsg() => 'One of the metrics ($property) has not an authorized value. Checks the values of all the metrics';
+String errMsg() => phrasebook.PhraseBook.notAProperValue(property);
+
 }
 
 // class to manage ap profile
