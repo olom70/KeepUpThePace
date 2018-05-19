@@ -36,7 +36,7 @@ void main(List<String> arguments) {
     final String profileGoal = argResults['ProfileGoal'];
     final String metricChoice = argResults['MetricChoice'];
     final String defaultProfile = argResults['DefaultProfile'];
-    final int weight = int.parse(argResults['Weight']);
+    final double weight = double.parse(argResults['Weight']);
     final int heightIntegerPart = int.parse(argResults['HeightIntegerPart']);
     final int heightDecimalPart = int.parse(argResults['HeightDecimalPart']);
     final int age = int.parse(argResults['Age']);

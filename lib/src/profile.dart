@@ -6,9 +6,7 @@ import 'phrasebook.dart' as phrasebook;
 //
 class ProfileNotEnoughArguments implements Exception {
   String rootCause;
-  ProfileNotEnoughArguments (String argument) {
-    rootCause = argument;
-  }
+  ProfileNotEnoughArguments (this.rootCause);
   String errMsg() => phrasebook.PhraseBook.notEnoughArguments(rootCause);
 
 }
@@ -16,9 +14,7 @@ class ProfileNotEnoughArguments implements Exception {
 class ProfileNotAProperValue implements Exception {
   //
   String property;
-  ProfileNotAProperValue (String argument) {
-    property = argument;
-  }
+  ProfileNotAProperValue (this.property);
 String errMsg() => phrasebook.PhraseBook.notAProperValue(property);
 
 }
@@ -32,7 +28,7 @@ class Profile {
   String profileGoal;
   String metricChoice;
   String defaultProfile;
-  int weight;
+  double weight;
   int heightIntegerPart;
   int heightDecimalPart;
   int age;
@@ -46,6 +42,8 @@ class Profile {
   double bBMI; // classic way to calculate it
   double nBMI; // new way to calculate it
   double bBMR;
+  double rRMRcal;
+  double rRMRml;
   double hHBE;
   double fatPercentage;
   double bodyFatWeight;
@@ -89,6 +87,7 @@ class Profile {
   }
 
   computeBMR() {
+    // BMR =  Basal Metabolic Rate
     //http://www.bmi-calculator.net/bmr-calculator/bmr-formula.php
     //Imperial :
     //Women: BMR = 655 + (4.35 x weight in pounds) + (4.7 x height in inches) - (4.7 x age in years)
@@ -129,6 +128,72 @@ class Profile {
               throw new ProfileNotAProperValue('metricChoice : $metricChoice');
           }
         }
+  }
+
+
+  double computeRMRml(double rRMRcal, double weight) {
+    // To convert kilocalories per day obtained from the Harris Benedict equation2 to ml.kg-1.min-1, the following formula is used.
+    //     kcal.day-1/1440 = kcal.min-1; kcal.min-1/5 = L.min-1; L.min-1/(weight kg)x1000 = ml.kg-1.min-1
+    double rRMRml;
+    rRMRml = (rRMRcal / 1440 / 5) / (weight*1000);
+    return rRMRml;
+  }
+
+  computeRMR() {
+    // RMR =  resting metabolic rate
+    // https://sites.google.com/site/compendiumofphysicalactivities/corrected-mets
+    //ISO :
+    // Harris Benedict equation2 for RMR (kilocalories per day):
+   	// Male = 66.4730 + 5.0033 (Height cm) + 13.7516 (Weight kg) – 6.7550 (Age yr)
+   	// Female = 655.0955 + 1.8496 (Height cm) + 9.5634 (Weight kg) – 4.6756 (Age yr)
+    // To convert kilocalories per day obtained from the Harris Benedict equation2 to ml.kg-1.min-1, the following formula is used.
+    //     kcal.day-1/1440 = kcal.min-1; kcal.min-1/5 = L.min-1; L.min-1/(weight kg)x1000 = ml.kg-1.min-1
+        if ((weight == null) || (heightIntegerPart == null) || (heightDecimalPart == null) || (metricChoice == null) || (age == null) || (gender == null)) {
+          throw new ProfileNotEnoughArguments('$weight $heightIntegerPart $heightDecimalPart $metricChoice $age $gender');
+        } else {
+          switch(metricChoice) {
+            case 'imperial':
+              switch(gender) {
+                case 'W':
+                  rRMRcal = 655.0955 + (9.5634*(weight*0.453592)) + (1.8496*((heightIntegerPart*12+heightDecimalPart)*0.0508)) - (4.6756*age);
+                  rRMRml = computeRMRml(rRMRcal, weight);
+                  break;
+                case 'M':
+                  rRMRcal = 66.4730 + (13.7516*(weight*0.453592)) + (5.033*((heightIntegerPart*12+heightDecimalPart)*0.0508)) - (6.7550*age);
+                  rRMRml = computeRMRml(rRMRcal, weight);
+                  break;
+                default:
+                  throw new ProfileNotAProperValue('gender : $gender');
+              }
+              break;
+            case 'iso':
+            switch(gender) {
+              case 'W':
+                rRMRcal = 655.0955 + (9.5634*weight) + (1.8496*(heightIntegerPart*12+heightDecimalPart)) - (4.6756*age);
+                rRMRml = computeRMRml(rRMRcal, weight);
+                break;
+              case 'M':
+                rRMRcal = 66.4730 + (13.7516*weight) + (5.033*(heightIntegerPart*12+heightDecimalPart)) - (6.7550*age);
+                rRMRml = computeRMRml(rRMRcal, weight);
+                break;
+              default:
+                  throw new ProfileNotAProperValue('gender : $gender');
+              }
+              break;
+            default:
+              throw new ProfileNotAProperValue('metricChoice : $metricChoice');
+          }
+       }
+  }
+
+  double getCorrectedMetValue (double metValue) {
+    double correctedMetValue;
+    if ((metValue == null) || (rRMRml == null)) {
+      throw new ProfileNotAProperValue('metValue/RMRml : $metValue/$rRMRml');
+    } else {
+      correctedMetValue = metValue * (3.5 / rRMRml);
+    }
+    return correctedMetValue;
   }
 
   computeHBE() {
