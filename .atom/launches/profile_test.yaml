@@ -10,4 +10,4 @@ cli:
   # Enable or disable checked mode.
   checked: true
   # Enable or disable debugging.
-  debug: true
+  debug: false

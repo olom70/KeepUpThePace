@@ -4,7 +4,7 @@ path: bin\main.dart
 
 cli:
   # Additional args for the application.
-  args: -m mauvais
+  args: -m iso
   # The working directory to use for the launch.
   cwd:
   # Enable or disable checked mode.

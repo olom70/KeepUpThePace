@@ -7,7 +7,7 @@ import 'phrasebook.dart' as phrasebook;
 class ProfileNotEnoughArguments implements Exception {
   String rootCause;
   ProfileNotEnoughArguments (this.rootCause);
-  String errMsg() => phrasebook.PhraseBook.notEnoughArguments(rootCause);
+  String errMsg() => phrasebook.PhraseBook.notEnoughArguments(this.rootCause);
 
 }
 
@@ -15,7 +15,7 @@ class ProfileNotAProperValue implements Exception {
   //
   String property;
   ProfileNotAProperValue (this.property);
-String errMsg() => phrasebook.PhraseBook.notAProperValue(property);
+String errMsg() => phrasebook.PhraseBook.notAProperValue(this.property);
 
 }
 
