@@ -135,7 +135,7 @@ class Profile {
     // To convert kilocalories per day obtained from the Harris Benedict equation2 to ml.kg-1.min-1, the following formula is used.
     //     kcal.day-1/1440 = kcal.min-1; kcal.min-1/5 = L.min-1; L.min-1/(weight kg)x1000 = ml.kg-1.min-1
     double rRMRml;
-    rRMRml = (rRMRcal / 1440 / 5) / (weight*1000);
+    rRMRml = (rRMRcal / 1440 / 5 / weight)*1000;
     return rRMRml;
   }
 
@@ -147,7 +147,7 @@ class Profile {
    	// Male = 66.4730 + 5.0033 (Height cm) + 13.7516 (Weight kg) – 6.7550 (Age yr)
    	// Female = 655.0955 + 1.8496 (Height cm) + 9.5634 (Weight kg) – 4.6756 (Age yr)
     // To convert kilocalories per day obtained from the Harris Benedict equation2 to ml.kg-1.min-1, the following formula is used.
-    //     kcal.day-1/1440 = kcal.min-1; kcal.min-1/5 = L.min-1; L.min-1/(weight kg)x1000 = ml.kg-1.min-1
+    //     kcal.day-1/1440 = kcal.min-1; kcal.min-1/5 = L.min-1; (L.min-1/weight kg)x1000 = ml.kg-1.min-1
         if ((weight == null) || (heightIntegerPart == null) || (heightDecimalPart == null) || (metricChoice == null) || (age == null) || (gender == null)) {
           throw new ProfileNotEnoughArguments('$weight $heightIntegerPart $heightDecimalPart $metricChoice $age $gender');
         } else {
@@ -169,11 +169,11 @@ class Profile {
             case 'iso':
             switch(gender) {
               case 'W':
-                rRMRcal = 655.0955 + (9.5634*weight) + (1.8496*(heightIntegerPart*12+heightDecimalPart)) - (4.6756*age);
+                rRMRcal = 655.0955 + (9.5634*weight) + (1.8496*(heightIntegerPart*100+heightDecimalPart)) - (4.6756*age);
                 rRMRml = computeRMRml(rRMRcal, weight);
                 break;
               case 'M':
-                rRMRcal = 66.4730 + (13.7516*weight) + (5.033*(heightIntegerPart*12+heightDecimalPart)) - (6.7550*age);
+                rRMRcal = 66.4730 + (13.7516*weight) + (5.033*(heightIntegerPart*100+heightDecimalPart)) - (6.7550*age);
                 rRMRml = computeRMRml(rRMRcal, weight);
                 break;
               default:
