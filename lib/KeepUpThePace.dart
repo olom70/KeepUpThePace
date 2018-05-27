@@ -4,5 +4,5 @@
 /// More dartdocs go here.
 library KeepUpThePace;
 
-export 'src/profile.dart';
+export 'src/keepupthepace/profile.dart';
 // TODO: Export any libraries intended for clients of this package.

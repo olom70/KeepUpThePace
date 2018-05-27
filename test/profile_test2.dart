@@ -16,22 +16,9 @@ void main() {
   ..age = 35
   ..gender = 'W';
 
-  profile.computeRMR(1918);
-  test('calculate RMR1918 (Calorie)', () {
-    expect(profile.rRMRcal, 1375.9863);
-  });
-
-  test('calculate RMR (ml)', () {
-    expect(profile.rRMRml, 3.1851534722222223);
-  });
-
-  compendium.Sports sportsMET = new compendium.Sports();
-  test('obtain MET of 15550', (){
-    expect(sportsMET.getMetValue(15550), 12.3);
-  });
-
-  test('calculate CorrectedMET', () {
-    expect(profile.getCorrectedMetValue(12.3), 13.515832243387889);
+  profile.computeRMR(1984);
+  test('calculate RMR1984 (Calorie)', () {
+    expect(profile.rRMRcal, 1371.327);
   });
 
 }

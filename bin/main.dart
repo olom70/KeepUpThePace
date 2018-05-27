@@ -70,14 +70,6 @@ void main(List<String> arguments) {
     }
 
     try {
-      profile.computeBMR();
-    }
-    catch(e) {
-      print('profile.computeBMR :');
-      print (e.errMsg());
-    }
-
-    try {
       profile.computeHBE();
     }
     catch(e) {
@@ -101,6 +93,16 @@ void main(List<String> arguments) {
       print (e.errMsg());
     }
 
-    profile.verify();
+    profile.computeRMR(1918);
+    print(profile.rRMRcal);
+
+    profile.computeRMR(1984);
+    print(profile.rRMRcal);
+
+    profile.computeRMR(1990);
+    print(profile.rRMRcal);
+
+
+    //profile.verify();
 
 }

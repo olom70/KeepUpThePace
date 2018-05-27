@@ -1,10 +1,10 @@
-# Cli launch configuration for bin\main.dart.
+# Cli launch configuration for test\profile_test2.dart.
 type: cli
-path: bin\main.dart
+path: test\profile_test2.dart
 
 cli:
   # Additional args for the application.
-  args: -m iso -e 60 -a 35 -w W -t 68
+  args:
   # The working directory to use for the launch.
   cwd:
   # Enable or disable checked mode.
